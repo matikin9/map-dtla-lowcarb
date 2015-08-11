@@ -30,7 +30,7 @@
 		{
 			"name": "Mendocino Farms (Figueroa)",
 			"description": "salads, soups",
-			"address": "735 S Figueroa St, Los Angeles, CA 90071",
+			"address": "735 S Figueroa St, Los Angeles, CA 90017",
 			"coordinates": {
 				"latitude": 34.048896,
 				"longitude": -118.260382
@@ -43,6 +43,258 @@
 			"coordinates": {
 				"latitude": 34.050101,
 				"longitude": -118.242179
+			}
+		},
+		{
+			"name": "DTLA Cheese",
+			"description": "cheese, cured meat",
+			"address": "317 S. Broadway, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0507124081633,
+				"longitude": -118.248375387755
+			}
+		},
+		{
+			"name": "Horse Thief",
+			"description": "BBQ",
+			"address": "324 S. Hill St., Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0512058367347,
+				"longitude": -118.249385591837
+			}
+		},
+		{
+			"name": "Simply Salad (Historic Core)",
+			"description": "salads",
+			"address": "334 S Main St, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0489811020408,
+				"longitude": -118.246268102041
+			}
+		},
+		{
+			"name": "Simply Salad (South Park)",
+			"description": "salads",
+			"address": "645 W 9th St, Los Angeles, CA 90015",
+			"coordinates": {
+				"latitude": 34.0454731,
+				"longitude": -118.2602946
+			}
+		},
+		{
+			"name": "Far Bar",
+			"description": "Ming's wings",
+			"address": "347 E 1st St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0496226,
+				"longitude": -118.2395849
+			}
+		},
+		{
+			"name": "Sushi Enya",
+			"description": "rice-less rolls (still has imitation crab meat)",
+			"address": "343 E 1st St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0497660769231,
+				"longitude": -118.239815846154
+			}
+		},
+		{
+			"name": "Chego",
+			"description": "bowls w/o rice",
+			"address": "727 N Broadway, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0579309,
+				"longitude": -118.2409944
+			}
+		},
+		{
+			"name": "Umami Burger (Fashion District)",
+			"description": "protein style burger",
+			"address": "852 S Broadway, Los Angeles, CA 90015",
+			"coordinates": {
+				"latitude": 34.0424014,
+				"longitude": -118.2560155
+			}
+		},
+		{
+			"name": "Umami Burger (Arts District)",
+			"description": "protein style burger",
+			"address": "738 E 3rd St, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0455299,
+				"longitude": -118.236680601247
+			}
+		},
+		{
+			"name": "Berlin Currywurst",
+			"description": "currywurst sausage",
+			"address": "317 S. Broadway, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0507124081633,
+				"longitude": -118.248375387755
+			}
+		},
+		{
+			"name": "Eggslut",
+			"description": "steak and eggs",
+			"address": "317 S. Broadway, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0507124081633,
+				"longitude": -118.248375387755
+			}
+		},
+		{
+			"name": "Loteria Grill",
+			"description": "tacos in lettuce cups",
+			"address": "735 S Figueroa St, Los Angeles, CA 90017",
+			"coordinates": {
+				"latitude": 34.048896,
+				"longitude": -118.260382
+			}
+		},
+		{
+			"name": "Pollo a la Brasa",
+			"description": "roast chicken",
+			"address": "764 Western Ave, Los Angeles, CA 90005",
+			"coordinates": {
+				"latitude": 34.0633837,
+				"longitude": -118.3091195
+			}
+		},
+		{
+			"name": "Ocho Grill (6th)",
+			"description": "salad bowls",
+			"address": "630 W 6th St, Los Angeles, CA 90017",
+			"coordinates": {
+				"latitude": 34.0489199183673,
+				"longitude": -118.255702836735
+			}
+		},
+		{
+			"name": "Ocho Grill (Grand)",
+			"description": "salad bowls",
+			"address": "255 S Grand Ave, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0508726,
+				"longitude": -118.2532666
+			}
+		},
+		{
+			"name": "Chipotle",
+			"description": "salad bowls",
+			"address": "601 W 7th St, Los Angeles, CA 90017",
+			"coordinates": {
+				"latitude": 34.047432,
+				"longitude": -118.25665
+			}
+		},
+		{
+			"name": "Phoenix Inn",
+			"description": "HK style meat/veggie dishes",
+			"address": "301 Ord St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0607762,
+				"longitude": -118.2405998
+			}
+		},
+		{
+			"name": "Tender Greens",
+			"description": "salads",
+			"address": "505 W 6th St, Los Angeles, CA 90014",
+			"coordinates": {
+				"latitude": 34.0482015714286,
+				"longitude": -118.254270857143
+			}
+		},
+		{
+			"name": "City Tavern",
+			"description": "salads",
+			"address": "735 S Figueroa St, Los Angeles, CA 90017",
+			"coordinates": {
+				"latitude": 34.048896,
+				"longitude": -118.260382
+			}
+		},
+		{
+			"name": "Shabu Shabu House",
+			"description": "shabu shabu",
+			"address": "127 Japanese Village Plaza Mall, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.049115,
+				"longitude": -118.239786
+			}
+		},
+		{
+			"name": "Spitz",
+			"description": "salad",
+			"address": "371 E 2nd St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0472374,
+				"longitude": -118.2386198
+			}
+		},
+		{
+			"name": "Seasalt Fish Grill",
+			"description": "fish",
+			"address": "812 W 7th St, Los Angeles, CA 90017",
+			"coordinates": {
+				"latitude": 34.048844,
+				"longitude": -118.2591665
+			}
+		},
+		{
+			"name": "Yellowfin Grill",
+			"description": "fish",
+			"address": "227 E 9th St, Los Angeles, CA 90015",
+			"coordinates": {
+				"latitude": 34.0405662857143,
+				"longitude": -118.253773285714
+			}
+		},
+		{
+			"name": "TOT",
+			"description": "sushi salad bowls",
+			"address": "345 E 2nd St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0486455384615,
+				"longitude": -118.240888807692
+			}
+		},
+		{
+			"name": "The Oyster Gourmet",
+			"description": "oysters, poke, ceviche",
+			"address": "317 S. Broadway, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0507124081633,
+				"longitude": -118.248375387755
+			}
+		},
+		{
+			"name": "Belcampo",
+			"description": "broccolini",
+			"address": "317 S. Broadway, Los Angeles, CA 90013",
+			"coordinates": {
+				"latitude": 34.0507124081633,
+				"longitude": -118.248375387755
+			}
+		},
+		{
+			"name": "Snociety",
+			"description": "poke bowl on salad",
+			"address": "330 E 2nd St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0488397058824,
+				"longitude": -118.241184117647
+			}
+		},
+		{
+			"name": "Ohana Poke Co.",
+			"description": "poke bowl on kale",
+			"address": "130 E 6th St, Los Angeles, CA 90014",
+			"coordinates": {
+				"latitude": 34.0449737346939,
+				"longitude": -118.249663183673
 			}
 		}
 	]
