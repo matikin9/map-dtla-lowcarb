@@ -1,0 +1,49 @@
+{
+	"restaurants": [
+		{
+			"name": "Pitfire Pizza",
+			"description": "seasonal veggie plate/salads",
+			"address": "108 W 2nd St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.0510825,
+				"longitude": -118.2452603
+			}
+		},
+		{
+			"name": "Mendocino Farms (Grand)",
+			"description": "salads, soups",
+			"address": "300 S Grand Ave, Los Angeles, CA 90071",
+			"coordinates": {
+				"latitude": 34.052888,
+				"longitude": -118.251239
+			}
+		},
+		{
+			"name": "Mencodino Farms (Flower)",
+			"description": "salads, soups",
+			"address": "444 S Flower St, Los Angeles, CA 90071",
+			"coordinates": {
+				"latitude": 34.0522473265306,
+				"longitude": -118.25531855102
+			}
+		},
+		{
+			"name": "Mendocino Farms (Figueroa)",
+			"description": "salads, soups",
+			"address": "735 S Figueroa St, Los Angeles, CA 90071",
+			"coordinates": {
+				"latitude": 34.048896,
+				"longitude": -118.260382
+			}
+		},
+		{
+			"name": "Marukai",
+			"description": "prepared foods (stewed pork/egg, seaweed)",
+			"address": "123 S Onizuka St, Los Angeles, CA 90012",
+			"coordinates": {
+				"latitude": 34.050101,
+				"longitude": -118.242179
+			}
+		}
+	]
+}
