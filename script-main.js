@@ -17,6 +17,7 @@ function init_map() {
 google.maps.event.addDomListener(window, 'load', init_map);
 
 var restaurant_list = [];
+var infoWindow_list = [];
 var iconBase = 'http://labs.google.com/ridefinder/images/';
 
 $.getJSON("https://raw.githubusercontent.com/matikin9/map-dtla-lowcarb/master/data/low-carb-data.json", function (data) {
@@ -36,21 +37,24 @@ $.getJSON("https://raw.githubusercontent.com/matikin9/map-dtla-lowcarb/master/da
         			title: r.name
         		});
         		
-        		var contentString = '<div id="content">'+
-        			'<div id="siteNotice">'+
-        			'</div>'+
-        			'<h1>' + r.name + '</h1>'+
-        			'<div id="bodyContent">'+
+        		var contentString = '<div id="wndContent">'+
+        			'<h3>' + r.name + '</h3>'+
+        			'<div id="wndBodyContent">'+
         			r.description + '<br /><br />' + r.address +
         			'</div>'+
         			'</div>';
         		  
-        		var infowindow = new google.maps.InfoWindow({
+        		var infoWindow = new google.maps.InfoWindow({
         			content: contentString
         		});
         		
+				infoWindow_list.push(infoWindow);
+				
         		google.maps.event.addListener(marker, 'click', function() {
-        			infowindow.open(map,marker);
+					infoWindow_list.forEach(function(item) {
+						item.close();
+					});
+        			infoWindow.open(map,marker);
         		});
         	});
         }

@@ -2,3 +2,7 @@ html, body, #map-canvas {
 	height: 500px;
 	width: 500px;
 }
+
+#wndBodyContent {
+	padding-bottom: 5px;
+}
