@@ -1,12 +1,23 @@
-function Restaurant(obj) {
-    this.name = obj.name;
-    this.description = obj.description;
-    this.address = obj.address;
-    this.lat = obj.coordinates[0];
-    this.lng = obj.coordinates[1];
-};
+/*
+ * Markers: https://sites.google.com/site/gmapsdevelopment/
+*/
+var map;
+
+function init_map() {
+	var mapCanvas = document.getElementById('map-canvas');
+	var mapOptions = {
+		center: new google.maps.LatLng(34.0450, -118.2500),
+		zoom: 14,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	
+	map = new google.maps.Map(mapCanvas, mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', init_map);
 
 var restaurant_list = [];
+var iconBase = 'http://labs.google.com/ridefinder/images/';
 
 $.getJSON("https://raw.githubusercontent.com/matikin9/map-dtla-lowcarb/master/data/low-carb-data.json", function (data) {
     var items = data.restaurants;
@@ -14,16 +25,6 @@ $.getJSON("https://raw.githubusercontent.com/matikin9/map-dtla-lowcarb/master/da
     $.each(data, function (key, val) {
         if (key == "restaurants") {
             restaurant_list = val;
-            /*
-            var restaurant_objects = val;
-
-            $.each(val, function (k, v) {
-                var item = "key: " + k + ", val: " + v;
-                items.push(item + "<br />");
-            });
-            */
-            
-            var iconBase = 'http://labs.google.com/ridefinder/images/';
 	
         	restaurant_list.forEach(function(r) {
         		var myLatLng = new google.maps.LatLng(r.coordinates.latitude, r.coordinates.longitude);
@@ -56,12 +57,3 @@ $.getJSON("https://raw.githubusercontent.com/matikin9/map-dtla-lowcarb/master/da
 
     });
 });
-
-/*
-restaurant_data.forEach(function (item) {
-    if (item.coordinates[0] != null && item.coordinates[1] != null) {
-        var entry = new Restaurant(item);
-        restaurant_list.push(entry);
-    }
-});
-*/
