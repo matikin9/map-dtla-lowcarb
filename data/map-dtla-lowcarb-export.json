@@ -1,0 +1,21 @@
+{
+  "restaurants" : {
+    "mendo1" : {
+      "address" : "300 S. Grand Ave., Los Angeles, CA 90071",
+      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
+      "lat" : 34.05262,
+      "lng" : -118.2509537,
+      "name" : "Mendocino Farms",
+      "type" : "sandwich and salad"
+    },
+    "snoci1" : {
+      "address" : "330 E. 2nd St, Los Angeles, CA 90012",
+      "food" : [ "Protein-only poke bowl", "Poke bowls with salad base" ],
+      "lat" : 34.0487927,
+      "lng" : -118.2416954,
+      "name" : "Snociety Urban Eatery",
+      "type" : "poke"
+    }
+  },
+  "types" : [ "sandwich and salad", "poke" ]
+}
