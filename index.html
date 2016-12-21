@@ -2,40 +2,30 @@
 <html>
 
 <head>
-	<!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />-->
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>-->
-
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<meta charset=utf-8 />
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<title>DTLA Low Carb</title>
+	
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+	<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+	
+	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Titillium+Web" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<div id="map-canvas"></div>
+	<div id="map-display"></div>
+	<div id="firebase-data">
+	</div>
 
-
-	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-	<script>
-		/*global firebase */
-		/*global $*/
-		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyC8Gpmbx5n6ql6Bk05anfYpl7S3HEdnGDw",
-			authDomain: "map-dtla-lowcarb.firebaseapp.com",
-			databaseURL: "https://map-dtla-lowcarb.firebaseio.com",
-			storageBucket: "map-dtla-lowcarb.appspot.com",
-			messagingSenderId: "423669000304"
-		};
-		firebase.initializeApp(config);
-		 var query = firebase.database().ref('restaurants').once('value').then(function(snapshot) {
-		 	snapshot.forEach(function(childSnapshot) {
-		 		var key = childSnapshot.key;
-		 		var childData = childSnapshot.val();
-		 		$('#map-canvas').append(childData.name + "<br />");
-		 	});
-		 });
-	</script>
-	<!--<script src="script-main.js"></script>-->
+	
+	<script src="database.js"></script>
+	<script src="map.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>

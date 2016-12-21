@@ -1,8 +1,33 @@
-html, body, #map-canvas {
-	height: 500px;
-	width: 500px;
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-#wndBodyContent {
-	padding-bottom: 5px;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arima Madurai', cursive;
+}
+
+h1 {
+	line-height: 24px;
+	font-size: 22px;
+}
+
+p, li {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#map-display {
+	width: 100%;
+	height: 500px;
+}
+
+#firebase-data {
+	padding: 20px;	
+}
+
+.leaflet-popup-content ul {
+	padding-left: 25px;
 }
