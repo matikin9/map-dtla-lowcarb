@@ -5,8 +5,32 @@
       "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
       "lat" : 34.05262,
       "lng" : -118.2509537,
-      "name" : "Mendocino Farms",
+      "name" : "Mendocino Farms (Grand)",
       "type" : "sandwich and salad"
+    },
+    "mendo2" : {
+      "address" : "444 S Flower St, Los Angeles, CA 90071",
+      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
+      "lat" : 34.0522473265306,
+      "lng" : -118.25531855102,
+      "name" : "Mendocino Farms (Flower)",
+      "type" : "sandwich and salad"
+    },
+    "mendo3" : {
+      "address" : "735 S Figueroa St, Los Angeles, CA 90017",
+      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
+      "lat" : 34.048896,
+      "lng" : -118.260382,
+      "name" : "Mendocino Farms (Figueroa)",
+      "type" : "sandwich and salad"
+    },
+    "maruk1" : {
+      "address" : "prepared foods (stewed pork/egg, seaweed)",
+      "food" : [ "stewed pork and egg", "poke", "sashimi", "avocados" ],
+      "lat" : 34.050101,
+      "lng" : -118.242179,
+      "name" : "Marukai Market",
+      "type" : "market"
     },
     "snoci1" : {
       "address" : "330 E. 2nd St, Los Angeles, CA 90012",
@@ -15,7 +39,63 @@
       "lng" : -118.2416954,
       "name" : "Snociety Urban Eatery",
       "type" : "poke"
+    },
+    "dtlac1" : {
+      "address" : "317 S. Broadway, Los Angeles, CA 90013",
+      "food" : [ "cheese, cheese plate, charcuterie plate, salads, soups" ],
+      "lat" : 34.0507124081633,
+      "lng" : -118.248375387755,
+      "name" : "DTLA Cheese",
+      "type" : "cheese"
+    },
+    "simpl1" : {
+      "address" : "334 S Main St, Los Angeles, CA 90013",
+      "food" : [ "custom salads" ],
+      "lat" : 34.0489811020408,
+      "lng" : -118.246268102041,
+      "name" : "Simply Salad (Historic Core)",
+      "type" : "salads"
+    },
+    "simpl2" : {
+      "address" : "645 W 9th St, Los Angeles, CA 90015",
+      "food" : [ "custom salads" ],
+      "lat" : 34.0454731,
+      "lng" : -118.2602946,
+      "name" : "Simply Salad (South Park)",
+      "type" : "salads"
+    },
+    "farba1" : {
+      "address" : "347 E 1st St, Los Angeles, CA 90012",
+      "food" : [ "Ming's wings" ],
+      "lat" : 34.0496226,
+      "lng" : -118.2395849,
+      "name" : "Far Bar",
+      "type" : "asian fusion"
+    },
+    "chego1" : {
+      "address" : "727 N Broadway, Los Angeles, CA 90012",
+      "food" : [ "bowls (sub veggies for rice)" ],
+      "lat" : 34.0579309,
+      "lng" : -118.2409944,
+      "name" : "Chego",
+      "type" : "asian fusion"
+    },
+    "eggsl1" : {
+      "address" : "317 S. Broadway, Los Angeles, CA 90013",
+      "food" : [ "steak and eggs" ],
+      "lat" : 34.0507124081633,
+      "lng" : -118.248375387755,
+      "name" : "Eggslut",
+      "type" : "brunch"
+    },
+    "phoen1" : {
+      "address" : "301 Ord St, Los Angeles, CA 90012",
+      "food" : [ "stir fried vegetables", "meat", "seafood" ],
+      "lat" : 34.0607762,
+      "lng" : -118.2405998,
+      "name" : "Phoenix Inn",
+      "type" : "chinese"
     }
   },
-  "types" : [ "sandwich and salad", "poke" ]
+  "types" : [ "sandwich and salad", "poke", "market", "cheese", "salads", "asian fusion", "brunch", "chinese" ]
 }
