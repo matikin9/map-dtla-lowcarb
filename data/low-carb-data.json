@@ -1,60 +1,6 @@
 {
 	"restaurants": [
 		{
-			"name": "Pitfire Pizza",
-			"description": "seasonal veggie plate/salads",
-			"address": "108 W 2nd St, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.0510825,
-				"longitude": -118.2452603
-			}
-		},
-		{
-			"name": "Mendocino Farms (Grand)",
-			"description": "salads, soups",
-			"address": "300 S Grand Ave, Los Angeles, CA 90071",
-			"coordinates": {
-				"latitude": 34.052888,
-				"longitude": -118.251239
-			}
-		},
-		{
-			"name": "Mencodino Farms (Flower)",
-			"description": "salads, soups",
-			"address": "444 S Flower St, Los Angeles, CA 90071",
-			"coordinates": {
-				"latitude": 34.0522473265306,
-				"longitude": -118.25531855102
-			}
-		},
-		{
-			"name": "Mendocino Farms (Figueroa)",
-			"description": "salads, soups",
-			"address": "735 S Figueroa St, Los Angeles, CA 90017",
-			"coordinates": {
-				"latitude": 34.048896,
-				"longitude": -118.260382
-			}
-		},
-		{
-			"name": "Marukai",
-			"description": "prepared foods (stewed pork/egg, seaweed)",
-			"address": "123 S Onizuka St, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.050101,
-				"longitude": -118.242179
-			}
-		},
-		{
-			"name": "DTLA Cheese",
-			"description": "cheese, cured meat",
-			"address": "317 S. Broadway, Los Angeles, CA 90013",
-			"coordinates": {
-				"latitude": 34.0507124081633,
-				"longitude": -118.248375387755
-			}
-		},
-		{
 			"name": "Horse Thief",
 			"description": "BBQ",
 			"address": "324 S. Hill St., Los Angeles, CA 90013",
@@ -64,80 +10,8 @@
 			}
 		},
 		{
-			"name": "Simply Salad (Historic Core)",
-			"description": "salads",
-			"address": "334 S Main St, Los Angeles, CA 90013",
-			"coordinates": {
-				"latitude": 34.0489811020408,
-				"longitude": -118.246268102041
-			}
-		},
-		{
-			"name": "Simply Salad (South Park)",
-			"description": "salads",
-			"address": "645 W 9th St, Los Angeles, CA 90015",
-			"coordinates": {
-				"latitude": 34.0454731,
-				"longitude": -118.2602946
-			}
-		},
-		{
-			"name": "Far Bar",
-			"description": "Ming's wings",
-			"address": "347 E 1st St, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.0496226,
-				"longitude": -118.2395849
-			}
-		},
-		{
-			"name": "Sushi Enya",
-			"description": "rice-less rolls (still has imitation crab meat)",
-			"address": "343 E 1st St, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.0497660769231,
-				"longitude": -118.239815846154
-			}
-		},
-		{
-			"name": "Chego",
-			"description": "bowls w/o rice",
-			"address": "727 N Broadway, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.0579309,
-				"longitude": -118.2409944
-			}
-		},
-		{
-			"name": "Umami Burger (Fashion District)",
-			"description": "protein style burger",
-			"address": "852 S Broadway, Los Angeles, CA 90015",
-			"coordinates": {
-				"latitude": 34.0424014,
-				"longitude": -118.2560155
-			}
-		},
-		{
-			"name": "Umami Burger (Arts District)",
-			"description": "protein style burger",
-			"address": "738 E 3rd St, Los Angeles, CA 90013",
-			"coordinates": {
-				"latitude": 34.0455299,
-				"longitude": -118.236680601247
-			}
-		},
-		{
 			"name": "Berlin Currywurst",
 			"description": "currywurst sausage",
-			"address": "317 S. Broadway, Los Angeles, CA 90013",
-			"coordinates": {
-				"latitude": 34.0507124081633,
-				"longitude": -118.248375387755
-			}
-		},
-		{
-			"name": "Eggslut",
-			"description": "steak and eggs",
 			"address": "317 S. Broadway, Los Angeles, CA 90013",
 			"coordinates": {
 				"latitude": 34.0507124081633,
@@ -190,15 +64,6 @@
 			}
 		},
 		{
-			"name": "Phoenix Inn",
-			"description": "HK style meat/veggie dishes",
-			"address": "301 Ord St, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.0607762,
-				"longitude": -118.2405998
-			}
-		},
-		{
 			"name": "Tender Greens",
 			"description": "salads",
 			"address": "505 W 6th St, Los Angeles, CA 90014",
@@ -217,15 +82,6 @@
 			}
 		},
 		{
-			"name": "Shabu Shabu House",
-			"description": "shabu shabu",
-			"address": "127 Japanese Village Plaza Mall, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.049115,
-				"longitude": -118.239786
-			}
-		},
-		{
 			"name": "Spitz",
 			"description": "salad",
 			"address": "371 E 2nd St, Los Angeles, CA 90012",
@@ -241,15 +97,6 @@
 			"coordinates": {
 				"latitude": 34.048844,
 				"longitude": -118.2591665
-			}
-		},
-		{
-			"name": "Yellowfin Grill",
-			"description": "fish",
-			"address": "227 E 9th St, Los Angeles, CA 90015",
-			"coordinates": {
-				"latitude": 34.0405662857143,
-				"longitude": -118.253773285714
 			}
 		},
 		{
@@ -277,15 +124,6 @@
 			"coordinates": {
 				"latitude": 34.0507124081633,
 				"longitude": -118.248375387755
-			}
-		},
-		{
-			"name": "Snociety",
-			"description": "poke bowl on salad",
-			"address": "330 E 2nd St, Los Angeles, CA 90012",
-			"coordinates": {
-				"latitude": 34.0488397058824,
-				"longitude": -118.241184117647
 			}
 		},
 		{
