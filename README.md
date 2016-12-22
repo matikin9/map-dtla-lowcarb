@@ -1,6 +1,6 @@
 # map-dtla-lowcarb
 
-Map of restaurants with low carb food options in DTLA.  This is mostly a personal project for practicing using maps, APIs, etc.  It has the added benefit of being potentially useful for myself and others.
+For those of us looking for low carb lunch options in DTLA.
 
 ## Usage
 
@@ -13,19 +13,42 @@ To add to the spreadsheet of food options, fill in this Google Form: http://goo.
 ## Contributing
 
 1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+2. Make your changes!
+3. Commit your changes: `git commit -am '<description-here>'`
+4. Open a pull request!
 
-## History
+## Restaurant Info for JSON file
 
-There have been periods of time in my life when I've gone on a temporary low carb/cyclical ketogenic diet in order to lose weight.  A variety of factors made this difficult:
+Structure for additional restaurants in the JSON file:
+```
+,
+    "" : {
+      "address" : 
+      "food" : [ "" ],
+      "lat" : 
+      "lng" : 
+      "name" : 
+      "type" : 
+    }
+```
 
-* I love food
-* Especially carby food
-* I don't always have time in my life to cook
-* I know that my body will actually lose fat on a low carb diet.
+## Restaurants to potentially add:
 
-What I had going in my favor is that I work in downtown Los Angeles, surrounded by a variety of delicious food accessible by convenient and frequent 50 cent buses.  Of all the reasons to break diet, I decided that not being able to think of where to eat is a stupid one.  Thus, I thought to create a list of low carb options in DTLA.
+* Seoul Sausage - veggie bowl/side options?
+* Manuela - vegetables, salad
+* Comfort LA - wings, greens
+* Yuko Kitchen - salads
+* Ledlow - salads
+* Spread Mediterranean - salad bowl
+* Birdies - fried chicken
+* Wurstkuche - sausages, no bun
+* Bar Ama - vegetables
+* Baco Mercat - vegetables
 
+## Enhancements:
+
+* Layer for DASH routes on map.
+* Layer for Metro bike stations.
+* Layer for Metro rail stations.
+* Map toggling for: restaurants near DASH/Metro bike/Metro rail, food type, open now.
+* More restaurant details: website, hours

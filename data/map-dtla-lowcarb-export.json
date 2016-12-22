@@ -2,7 +2,7 @@
   "restaurants" : {
     "mendo1" : {
       "address" : "300 S. Grand Ave., Los Angeles, CA 90071",
-      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
+      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad", "soups" ],
       "lat" : 34.05262,
       "lng" : -118.2509537,
       "name" : "Mendocino Farms (Grand)",
@@ -10,7 +10,7 @@
     },
     "mendo2" : {
       "address" : "444 S Flower St, Los Angeles, CA 90071",
-      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
+      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad", "soups" ],
       "lat" : 34.0522473265306,
       "lng" : -118.25531855102,
       "name" : "Mendocino Farms (Flower)",
@@ -18,14 +18,14 @@
     },
     "mendo3" : {
       "address" : "735 S Figueroa St, Los Angeles, CA 90017",
-      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad" ],
+      "food" : [ "The Sophisticated Chicken and Prosciutto Salad", "Mama Chen's Chinese Chicken Salad", "soups" ],
       "lat" : 34.048896,
       "lng" : -118.260382,
       "name" : "Mendocino Farms (Figueroa)",
       "type" : "sandwich and salad"
     },
     "maruk1" : {
-      "address" : "prepared foods (stewed pork/egg, seaweed)",
+      "address" : "123 Astronaut E S Onizuka St #105, Los Angeles, CA 90012",
       "food" : [ "stewed pork and egg", "poke", "sashimi", "avocados" ],
       "lat" : 34.050101,
       "lng" : -118.242179,
@@ -34,7 +34,7 @@
     },
     "snoci1" : {
       "address" : "330 E. 2nd St, Los Angeles, CA 90012",
-      "food" : [ "Protein-only poke bowl", "Poke bowls with salad base" ],
+      "food" : [ "poke bowls" ],
       "lat" : 34.0487927,
       "lng" : -118.2416954,
       "name" : "Snociety Urban Eatery",
@@ -42,7 +42,7 @@
     },
     "dtlac1" : {
       "address" : "317 S. Broadway, Los Angeles, CA 90013",
-      "food" : [ "cheese, cheese plate, charcuterie plate, salads, soups" ],
+      "food" : [ "cheese", "charcuterie", "salads", "soups" ],
       "lat" : 34.0507124081633,
       "lng" : -118.248375387755,
       "name" : "DTLA Cheese",
@@ -90,12 +90,148 @@
     },
     "phoen1" : {
       "address" : "301 Ord St, Los Angeles, CA 90012",
-      "food" : [ "stir fried vegetables", "meat", "seafood" ],
+      "food" : [ "chicken", "pork", "seafood", "eggs", "vegetables", "tofu" ],
       "lat" : 34.0607762,
       "lng" : -118.2405998,
       "name" : "Phoenix Inn",
       "type" : "chinese"
+    },
+    "horse1" : {
+      "address" : "324 S. Hill St., Los Angeles, CA 90013",
+      "food" : [ "bbq meat", "salads" ],
+      "lat" : 34.0512058367347,
+      "lng" : -118.249385591837,
+      "name" : "Horse Thief",
+      "type" : "bbq"
+    },
+    "ochog1" : {
+      "address" : "630 W 6th St, Los Angeles, CA 90017",
+      "food" : [ "salad bowls" ],
+      "lat" : 34.0489199183673,
+      "lng" : -118.255702836735,
+      "name" : "Ocho Grill (6th)",
+      "type" : "mexican"
+    },
+    "ochog2" : {
+      "address" : "255 S Grand Ave, Los Angeles, CA 90012",
+      "food" : [ "salad bowls" ],
+      "lat" : 34.0508726,
+      "lng" : -118.2532666,
+      "name" : "Ocho Grill (Grand)",
+      "type" : "mexican"
+    },
+    "chipo1" : {
+      "address" : "601 W 7th St, Los Angeles, CA 90017",
+      "food" : [ "salad bowls" ],
+      "lat" : 34.047432,
+      "lng" : -118.25665,
+      "name" : "Chipotle",
+      "type" : "mexican"
+    },
+    "tende1" : {
+      "address" : "505 W 6th St, Los Angeles, CA 90014",
+      "food" : [ "salads" ],
+      "lat" : 34.0482015714286,
+      "lng" : -118.254270857143,
+      "name" : "Tender Greens",
+      "type" : "american"
+    },
+    "cityt1" : {
+      "address" : "735 S Figueroa St, Los Angeles, CA 90017",
+      "food" : [ "salads", "brussels sprouts" ],
+      "lat" : 34.048896,
+      "lng" : -118.260382,
+      "name" : "City Tavern",
+      "type" : "american"
+    },
+    "spitz1" : {
+      "address" : "371 E 2nd St, Los Angeles, CA 90012",
+      "food" : [ "salads" ],
+      "lat" : 34.0472374,
+      "lng" : -118.2386198,
+      "name" : "Spitz",
+      "type" : "mediterranean"
+    },
+    "seasa1" : {
+      "address" : "812 W 7th St, Los Angeles, CA 90017",
+      "food" : [ "salads", "poke", "grilled fish" ],
+      "lat" : 34.048844,
+      "lng" : -118.2591665,
+      "name" : "Seasalt Fish Grill",
+      "type" : "seafood"
+    },
+    "tot1" : {
+      "address" : "345 E 2nd St, Los Angeles, CA 90012",
+      "food" : [ "sushi salad bowls" ],
+      "lat" : 34.0486455384615,
+      "lng" : -118.240888807692,
+      "name" : "TOT",
+      "type" : "japanese"
+    },
+    "oyste1" : {
+      "address" : "317 S. Broadway, Los Angeles, CA 90013",
+      "food" : [ "oysters", "poke", "ceviche" ],
+      "lat" : 34.0507124081633,
+      "lng" : -118.248375387755,
+      "name" : "The Oyster Gourmet",
+      "type" : "seafood"
+    },
+    "belca1" : {
+      "address" : "317 S. Broadway, Los Angeles, CA 90013",
+      "food" : [ "fried broccolini" ],
+      "lat" : 34.0507124081633,
+      "lng" : -118.248375387755,
+      "name" : "Belcampo",
+      "type" : "american"
+    },
+    "ohana1" : {
+      "address" : "130 E 6th St, Los Angeles, CA 90014",
+      "food" : [ "poke bowl" ],
+      "lat" : 34.0449737346939,
+      "lng" : -118.249663183673,
+      "name" : "Ohana Poke Co.",
+      "type" : "poke"
+    },
+    "ekoea1" : {
+      "address" : "630 W 6th Street, Suite 110B, Los Angeles, CA 90017",
+      "food" : [ "fried chickn", "fried chicken salad" ],
+      "lat" : 34.0489554,
+      "lng" : -118.2583323,
+      "name" : "Eko Eats",
+      "type" : "korean"
+    },
+    "korea1" : {
+      "address" : "123 S. Onizuka St, #302, Los Angeles, CA 90012",
+      "food" : [ "korean bbq", "tofu soup" ],
+      "lat" : 34.0503435,
+      "lng" : -118.2422056,
+      "name" : "Korea BBQ House",
+      "type" : "korean"
+    },
+    "skdto1" : {
+      "address" : "333 S Alameda St, Los Angeles, CA 90013"
+      "food" : [ "tofu soup", "korean bbq" ],
+      "lat" : 34.0450409,
+      "lng" : -118.2387909,
+      "name" : "SKD Tofu House",
+      "type" : "korean"
     }
   },
-  "types" : [ "sandwich and salad", "poke", "market", "cheese", "salads", "asian fusion", "brunch", "chinese" ]
+  "types" : [ 
+    "sandwich and salad", 
+    "poke", 
+    "market", 
+    "cheese", 
+    "salads", 
+    "asian fusion", 
+    "brunch", 
+    "chinese", 
+    "bbq", 
+    "mexican",
+    "american",
+    "mediterranean",
+    "seafood",
+    "japanese",
+    "korean"
+  ]
 }
