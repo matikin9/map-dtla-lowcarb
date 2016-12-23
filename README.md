@@ -21,15 +21,14 @@ To add to the spreadsheet of food options, fill in this Google Form: http://goo.
 
 Structure for additional restaurants in the JSON file:
 ```
-,
-    "<id>" : {
-      "address" : "<street-address>",
-      "food" : [ "<food-item>", "<food-item>" ],
-      "lat" : <latitude>,
-      "lng" : <longitude>,
-      "name" : <restaurant-name>,
-      "type" : <restaurant-genre>
-    }
+"<id>" : {
+  "address" : "<street-address>",
+  "food" : [ "<food-item>", "<food-item>" ],
+  "lat" : <latitude>,
+  "lng" : <longitude>,
+  "name" : <restaurant-name>,
+  "type" : <restaurant-genre>
+}
 ```
 
 __id__: A unique identifier for the restsaurant: the first 5 letters of restaurant name plus a number, starting at 1.
