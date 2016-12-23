@@ -32,11 +32,17 @@ Structure for additional restaurants in the JSON file:
 ```
 
 __id__: A unique identifier for the restsaurant: the first 5 letters of restaurant name plus a number, starting at 1.
+
 __address__: The restaurant's street address.
+
 __food__: Low carb food options at this restaurant - types of food or specific menu items.
+
 __lat__: Latitude coordinate of the restaurant.
+
 __lng__: Longitude coordinate of the restaurant.
+
 __name__: The restaurant's name.
+
 __type__: The type of food the restaurant serves.
 
 Copy/paste:
