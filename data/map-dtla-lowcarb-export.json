@@ -209,7 +209,7 @@
       "type" : "korean"
     },
     "skdto1" : {
-      "address" : "333 S Alameda St, Los Angeles, CA 90013"
+      "address" : "333 S Alameda St, Los Angeles, CA 90013",
       "food" : [ "tofu soup", "korean bbq" ],
       "lat" : 34.0450409,
       "lng" : -118.2387909,

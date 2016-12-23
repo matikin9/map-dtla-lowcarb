@@ -22,15 +22,37 @@ To add to the spreadsheet of food options, fill in this Google Form: http://goo.
 Structure for additional restaurants in the JSON file:
 ```
 ,
+    "<id>" : {
+      "address" : "<street-address>",
+      "food" : [ "<food-item>", "<food-item>" ],
+      "lat" : <latitude>,
+      "lng" : <longitude>,
+      "name" : <restaurant-name>,
+      "type" : <restaurant-genre>
+    }
+```
+
+__id__: A unique identifier for the restsaurant: the first 5 letters of restaurant name plus a number, starting at 1.
+__address__: The restaurant's street address.
+__food__: Low carb food options at this restaurant - types of food or specific menu items.
+__lat__: Latitude coordinate of the restaurant.
+__lng__: Longitude coordinate of the restaurant.
+__name__: The restaurant's name.
+__type__: The type of food the restaurant serves.
+
+Copy/paste:
+```
+,
     "" : {
-      "address" : 
+      "address" : "",
       "food" : [ "" ],
-      "lat" : 
-      "lng" : 
-      "name" : 
+      "lat" : ,
+      "lng" : ,
+      "name" : ,
       "type" : 
     }
 ```
+
 
 ## Restaurants to potentially add:
 
