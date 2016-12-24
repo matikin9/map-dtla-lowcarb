@@ -43,7 +43,7 @@ __lng__: Longitude coordinate of the restaurant.
 
 __name__: The restaurant's name.
 
-__type__: The type of food the restaurant serves.
+__type__: The category of food the restaurant serves.  If the type does not already exist in the JSON, add it to the types array.
 
 Copy/paste:
 ```
@@ -71,6 +71,7 @@ Copy/paste:
 * Wurstkuche - sausages, no bun
 * Bar Ama - vegetables
 * Baco Mercat - vegetables
+* Hoke Poke - poke
 
 ## Enhancements:
 
@@ -78,4 +79,4 @@ Copy/paste:
 * Layer for Metro bike stations.
 * Layer for Metro rail stations.
 * Map toggling for: restaurants near DASH/Metro bike/Metro rail, food type, open now.
-* More restaurant details: website, hours
+* More restaurant details: website, hours.
