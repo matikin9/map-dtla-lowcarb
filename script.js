@@ -47,7 +47,7 @@ firebase.database().ref('restaurants').once('value').then(function(snapshot) {
  */
 drawDash("Route A", "#a52c2c", "#6d1d1d", "https://data.lacity.org/resource/5icv-hrai.json", "https://data.lacity.org/resource/4wd4-uzr6.json");
 drawDash("Route B", "#23a1c4", "#1b6f87", "https://data.lacity.org/resource/5icv-hrai.json", "https://data.lacity.org/resource/4wd4-uzr6.json");
-
+drawDash("Route D", "#46b721", "#2d6d18", "https://data.lacity.org/resource/5icv-hrai.json", "https://data.lacity.org/resource/4wd4-uzr6.json");
 
 /*
  * Helper Functions
