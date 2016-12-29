@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<title>Geocode</title>
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+	<script src="../firebase-helper.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		h1, div {
+			margin-left: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>API response</h1>
+	<div id="response"></div>
+	<h1>Addresses</h1>
+    <div id="addresses"></div>
+    <h1>Coordinates</h1>
+    <div id="coordinates"></div>
+<script>
+
+var g_api = "https://maps.googleapis.com/maps/api/geocode/json";
+var g_key = "AIzaSyC8Gpmbx5n6ql6Bk05anfYpl7S3HEdnGDw";
+
+/*
+ * Retrieve data and add to map
+ */
+firebase.database().ref('restaurants').once('value').then(function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+        var key = childSnapshot.key;
+        var childData = childSnapshot.val();
+        
+        var $restaurantInfo = $("<div>", { 
+        	"id": key,
+        	"class": "restaurant-data"
+        });
+        
+        // Create element with restaurant info.
+        $restaurantInfo.append(childData.address);
+        
+        $('#addresses').append($restaurantInfo);
+    });
+    
+    $('#addresses div').each(function(index) {
+    	var $restaurant = $(this);
+    	
+		$.getJSON(g_api, {
+			key: g_key,
+			address: $restaurant.text()
+		}).done(function(data) {
+			if (data.status = 'OK') {
+				var lat = data.results[0].geometry.location.lat;
+				var lng = data.results[0].geometry.location.lng;
+				
+				$('#response').append('<div>' + index + ' - ' + $restaurant.attr('id') + ': ' + lat + ', ' + lng + '</div>');
+			} else {
+				$('#response').append('Error: ' + data.status);
+			}
+		}).fail(function(result) {
+			$('#response').append("Call failed");
+		});	
+	});
+});
+
+</script>
+</body>
+</html>
