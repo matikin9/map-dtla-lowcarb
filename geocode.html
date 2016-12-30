@@ -21,6 +21,7 @@
 </head>
 
 <body>
+	<div><a id="login" href="#">Login</a></div>
 	<h1>API response</h1>
 	<div id="response"></div>
 	<h1>Addresses</h1>
@@ -71,6 +72,39 @@ firebase.database().ref('restaurants').once('value').then(function(snapshot) {
 		});	
 	});
 });
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    $('#response').append('<div>' + user.uid + '</div>');
+  } else {
+    // No user is signed in.
+  }
+});
+
+$('#login').click(function() {
+	var provider = new firebase.auth.GithubAuthProvider();
+	firebase.auth().signInWithPopup(provider).then(function(result) {
+	  // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+	  var token = result.credential.accessToken;
+	  // The signed-in user info.
+	  var user = result.user;
+	  // ...
+	  $('#response').append("<div>User: " + result.user + '</div>');
+	}).catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // The email of the user's account used.
+	  var email = error.email;
+	  // The firebase.auth.AuthCredential type that was used.
+	  var credential = error.credential;
+	  // ...
+	  $('#response').append("<div>Authentication error: " + error.message + '</div>');
+	});	
+});
+
+
 
 </script>
 </body>
