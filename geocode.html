@@ -29,54 +29,76 @@
     <h1>Coordinates</h1>
     <div id="coordinates"></div>
 <script>
-
+/*global $*/
+/*global firebase*/
 var g_api = "https://maps.googleapis.com/maps/api/geocode/json";
 var g_key = "AIzaSyC8Gpmbx5n6ql6Bk05anfYpl7S3HEdnGDw";
 
 /*
  * Retrieve data and add to map
  */
-firebase.database().ref('restaurants').once('value').then(function(snapshot) {
-    snapshot.forEach(function(childSnapshot) {
-        var key = childSnapshot.key;
-        var childData = childSnapshot.val();
-        
-        var $restaurantInfo = $("<div>", { 
-        	"id": key,
-        	"class": "restaurant-data"
-        });
-        
-        // Create element with restaurant info.
-        $restaurantInfo.append(childData.address);
-        
-        $('#addresses').append($restaurantInfo);
-    });
-    
-    $('#addresses div').each(function(index) {
-    	var $restaurant = $(this);
-    	
-		$.getJSON(g_api, {
-			key: g_key,
-			address: $restaurant.text()
-		}).done(function(data) {
-			if (data.status = 'OK') {
-				var lat = data.results[0].geometry.location.lat;
-				var lng = data.results[0].geometry.location.lng;
-				
-				$('#response').append('<div>' + index + ' - ' + $restaurant.attr('id') + ': ' + lat + ', ' + lng + '</div>');
-			} else {
-				$('#response').append('Error: ' + data.status);
-			}
-		}).fail(function(result) {
-			$('#response').append("Call failed");
-		});	
+function geocodeData() {
+	firebase.database().ref('restaurants').once('value').then(function(snapshot) {
+	    snapshot.forEach(function(childSnapshot) {
+	        var key = childSnapshot.key;
+	        var childData = childSnapshot.val();
+	        
+	        var $restaurantInfo = $("<div>", { 
+	        	"id": key,
+	        	"class": "restaurant-data"
+	        });
+	        
+	        if (childData.lat === '' || childData.lat === null || childData.lng === '' || childData.lng === null) {
+		        $.getJSON(g_api, {
+					key: g_key,
+					address: childData.address
+				}).done(function(data) {
+					if (data.status === 'OK') {
+						childData.lat = data.results[0].geometry.location.lat;
+						childData.lng = data.results[0].geometry.location.lng;
+						
+						firebase.database().ref('restaurants/' + childData.id).set(childData);
+					} else {
+						$('#response').append('Error: ' + data.status);
+					}
+				}).fail(function(result) {
+					$('#response').append("Call failed");
+				});	
+	        }
+	        
+	        // Create element with restaurant info.
+	        $restaurantInfo.append(childData.lat + ', ' + childData.lng);
+	        
+	        $('#addresses').append($restaurantInfo);
+	    });
+	    /*
+	    $('#addresses div').each(function(index) {
+	    	var $restaurant = $(this);
+	    	
+			$.getJSON(g_api, {
+				key: g_key,
+				address: $restaurant.text()
+			}).done(function(data) {
+				if (data.status = 'OK') {
+					var lat = data.results[0].geometry.location.lat;
+					var lng = data.results[0].geometry.location.lng;
+					
+					$('#response').append('<div>' + index + ' - ' + $restaurant.attr('id') + ': ' + lat + ', ' + lng + '</div>');
+				} else {
+					$('#response').append('Error: ' + data.status);
+				}
+			}).fail(function(result) {
+				$('#response').append("Call failed");
+			});	
+		});*/
 	});
-});
+}
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    $('#response').append('<div>' + user.uid + '</div>');
+    $('#response').append('<div>User signed in:' + user.uid + '<br />' + user.providerData[0].displayName + ', ' + user.providerData[0].email + '</div>');
+    geocodeData();
   } else {
     // No user is signed in.
   }

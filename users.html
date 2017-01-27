@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<title>Users</title>
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+	<script src="../firebase-helper.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		h1, div {
+			margin-left: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>API response</h1>
+	<div id="response"></div>
+	
+	<h1>Log In from GitHub</h1>
+	<div><a id="loginGitHub" href="#">Log In</a></div>
+	
+	<h1>Create Account</h1>
+	<div>
+    	Email: <input type="text" id="email" /><br />
+    	Password: <input type="password" id="pw" /><br />
+    	Role: <select id="role">
+    	    <option>Administrator</option>
+    	    <option>Contributor</option>
+    	</select><br />
+	<a id="createManual" href="#">Create</a></div>
+	
+	<h1>Create Account from GitHub</h1>
+	<div></div>
+	
+<script>
+/*global $*/
+/*global firebase*/
+$(document).ready(function() {
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        // User is signed in.
+        firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+            $('#response').append("<div>User signout successful.</div>");
+        }, function(error) {
+            // An error happened.
+            $('#response').append("<div>User signout failed.</div>");
+        });
+    } else {
+      // No user is signed in.
+      $('#response').append("<div>No user is signed in.</div>");
+    }
+    
+});
+
+/*
+ * Create new user
+ */
+
+$('#createManual').click(function() {
+    var email = $('#email').val();
+    var pw = $('#pw').val();
+    
+    firebase.auth().createUserWithEmailAndPassword(email, pw).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      $('#response').append('<div>Error creating user: ' + error.message + '</div>');
+      // ...
+    });
+});
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    $('#response').append('<div>User signed in:' + user.uid + '<br />' + user.providerData[0].displayName + ', ' + user.providerData[0].email + '</div>');
+  } else {
+    // No user is signed in.
+  }
+});
+
+$('#loginGitHub').click(function() {
+	var provider = new firebase.auth.GithubAuthProvider();
+	firebase.auth().signInWithPopup(provider).then(function(result) {
+	  // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+	  var token = result.credential.accessToken;
+	  // The signed-in user info.
+	  var user = result.user;
+	  // ...
+	  $('#response').append("<div>User: " + result.user + '</div>');
+	}).catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // The email of the user's account used.
+	  var email = error.email;
+	  // The firebase.auth.AuthCredential type that was used.
+	  var credential = error.credential;
+	  // ...
+	  $('#response').append("<div>Authentication error: " + error.message + '</div>');
+	});	
+});
+
+
+
+</script>
+</body>
+</html>
