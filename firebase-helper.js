@@ -1,3 +1,4 @@
+/*global firebase*/
 /*
  * Initialize Firebase
  */
@@ -8,4 +9,5 @@ var config = {
     storageBucket: "map-dtla-lowcarb.appspot.com",
     messagingSenderId: "423669000304"
 };
+
 firebase.initializeApp(config);
