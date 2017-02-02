@@ -29,10 +29,11 @@ firebase.database().ref('restaurants').once('value').then(function(snapshot) {
         $restaurantInfo.append("<ul><li>" + childData.food.join('</li><li>') + "</li></ul>");
         
         // Create marker and add to map.
-        L.marker([childData.lat, childData.lng])
+        var m = L.marker([childData.lat, childData.lng])
         	.bindPopup($restaurantInfo[0])
-        	.addTo(mymap)
-        	.push(markers);
+        	.addTo(mymap);
+        
+        markers.push(m);
         
         $('div#data').append($restaurantInfo);
         $('div#data').append('<a href="#" script="onclick(L.marker.openPopup">view</a>');
